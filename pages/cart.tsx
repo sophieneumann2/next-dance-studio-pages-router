@@ -1,3 +1,4 @@
+import CustomerForm from '@/components/customer-form';
 import { CartContext } from '@/context/cart';
 import { Course } from '@/types';
 import Image from 'next/image';
@@ -54,12 +55,7 @@ export default function Cart() {
         <>
           <h2>Customer Details</h2>
           <p>HERE COMES THE CUSTOMER FORM (name, email, bild-einverständnis)</p>
-          <button
-            className="bg-purple-700 rounded-full p-2"
-            onClick={() => setCartStep(2)}
-          >
-            Book Classes
-          </button>
+          <CustomerForm additionalOnSubmit={() => setCartStep(2)} />
         </>
       ) : null}
       {cartStep === 2 ? (
