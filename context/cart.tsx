@@ -1,11 +1,11 @@
 import { Course } from '@/types';
-import { createContext, useState } from 'react';
+import { Dispatch, SetStateAction, createContext, useState } from 'react';
 
 type CartContextType = {
   coursesInCart: Course[];
-  setCoursesInCart: unknown;
-  addToCart: unknown;
-  removeFromCart: unknown;
+  setCoursesInCart: Dispatch<SetStateAction<Course[]>>;
+  addToCart: (course: Course) => void;
+  removeFromCart: (course: Course) => void;
 };
 
 const CartContext = createContext<CartContextType>({
