@@ -1,5 +1,5 @@
 import CourseSection from '@/components/course-section';
-import { getFavoriteClasses, getTodaysClasses } from '@/lib/courses';
+import { getTodaysClasses } from '@/lib/courses';
 import localFont from 'next/font/local';
 
 const geistSans = localFont({
@@ -15,7 +15,6 @@ const geistMono = localFont({
 
 export default function Home() {
   const todaysCourses = getTodaysClasses();
-  const favoriteCourses = getFavoriteClasses();
 
   return (
     <div
@@ -24,7 +23,6 @@ export default function Home() {
       <h1 className="text-xl">Dashboard</h1>
       <div className="flex flex-col gap-16">
         <CourseSection heading={"Today's classes"} courses={todaysCourses} />
-        <CourseSection heading={'Your Favorites'} courses={favoriteCourses} />
       </div>
     </div>
   );
