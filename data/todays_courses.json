@@ -2,10 +2,19 @@
   {
     "id": 1,
     "course_name": "Contemporary",
-    "time": "5:00 - 6:00 PM"
+    "time": "5:00 - 6:00 PM",
+    "time": "7:00 - 8:00 PM"
   },
-  { "id": 2, "course_name": "Commercial", "time": "6:00 - 7:00 PM" },
-  { "id": 3, "course_name": "Heels", "time": "7:00 - 8:00 PM" },
+  { "id": 2, "course_name": "Commercial", "time": 8 },
+  { "course_name": "Commercial", "time": 8 },
+  {
+    "id": 3,
+    "course_name": "Heels",
+    "course_name": "Heels Beginner",
+    "time": "7:00 - 8:00 PM"
+  },
   { "id": 4, "course_name": "Heels", "time": "7:00 - 8:00 PM" },
-  { "id": 5, "course_name": "Heels", "time": "7:00 - 8:00 PM" }
+  { "id": 5, "course_name": "Heels", "time": "7:00 - 8:00 PM" },
+  { "id": 5, "course_name": "Heels" },
+  { "id": 5, "course_name": "Zumba", "time": "8:00 - 9:00 PM" }
 ]
